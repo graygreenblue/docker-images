@@ -11,7 +11,7 @@ LABEL org.freenas.interactive="false"                                           
       org.freenas.volumes="[                                                                    \
           {                                                                                     \
               \"name\": \"/config\",                                                            \
-              \"value\": \"/mnt/tank/appdata/delugevpn\",                                       \
+              \"host_path\": \"/mnt/tank/appdata/delugevpn\",                                   \
               \"descr\": \"Config storage space\"                                               \
           },                                                                                    \
           {                                                                                     \
