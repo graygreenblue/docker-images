@@ -11,6 +11,7 @@ LABEL org.freenas.interactive="false"                                           
       org.freenas.volumes="[                                                                    \
           {                                                                                     \
               \"name\": \"/config\",                                                            \
+              \"value\": \"/mnt/tank/appdata/delugevpn\",                                       \
               \"descr\": \"Config storage space\"                                               \
           },                                                                                    \
           {                                                                                     \
@@ -84,7 +85,7 @@ LABEL org.freenas.interactive="false"                                           
           },                                                                                    \
           {                                                                                     \
               \"env\": \"LAN_NETWORK\",                                                         \
-              \"descr\": \"LAN Network to allow traffic through, <lan ipv4 network>/<cidr notation> eg. 192.168.0.0/16\",                                                           \
+              \"descr\": \"LAN Network to allow traffic through, <lan ipv4 network>/<cidr notation> eg. 192.168.0.0/16\",   \
               \"optional\": false                                                               \
           },                                                                                    \
           {                                                                                     \
