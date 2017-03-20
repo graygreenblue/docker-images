@@ -16,15 +16,19 @@ LABEL org.freenas.interactive="false"                                           
           {                                                                                     \
               \"name\": \"/seedbox\",                                                           \
               \"descr\": \"Downloads volume\"                                                   \
-          },                                                                                    \
-          {                                                                                     \
-              \"name\": \"/etc/localtime\",                                                     \
-              \"descr\": \"Local time file for time information, read-only\"                    \
-          }
+          }                                                                                     \
+      ]"                                                                                        \
+      org.freenas.static-volumes="[					                                    \
+          {								                                          \
+              \"container_path\": \"/etc/localtime\",			                              \
+              \"host_path\": \"/etc/localtime\",			                              \
+              \"readonly\": \"true\"					                              \
+          }								                                          \
       ]"                                                                                        \
       org.freenas.settings="[                                                                   \                                                                                    \
           {                                                                                     \
               \"env\": \"VPN_ENABLED\",                                                         \
+              \"value\": \"yes\",                                                               \
               \"descr\": \"Enable VPN? <yes|no>\",                                              \
               \"optional\": false                                                               \
           },                                                                                    \
